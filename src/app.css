@@ -5,10 +5,9 @@
 }
 
 body {
-  background-color: #262626;
+  background-color: #0d0d0d;
   color: #d9d9d9;
   font-family: "Poppins", sans-serif;
-  padding: 10px 20px;
 }
 
 header {
@@ -16,32 +15,63 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  height: 60px;
+  padding-inline: 20px;
+  background-color: #262626;
+  border-radius: 10px;
+  font-size: 13px;
 }
 
 h2 {
   font-size: 44px;
-  width: 300px;
-  margin-inline: 30px;
+  width: 700px;
+}
+
+strong {
+  color: #d93232;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 150px);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+section {
+  width: fit-content;
+  aspect-ratio: 1/0.4;
+}
+
+footer {
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-left: 4px solid #d9d9d9;
+  color: #a6a6a6;
+  font-size: 14px;
+  height: 70px;
 }
 
 a {
   display: inline;
   text-decoration: none;
-  font-size: 20px;
   padding: 10px;
   position: relative;
   color: white;
   font-weight: 700;
+  cursor: pointer;
 }
 
-main {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
+.links-nav {
+  font-size: 18px;
 }
 
-a::after {
+.links-nav::after {
   content: "";
   position: absolute;
   bottom: 7px;
@@ -52,17 +82,58 @@ a::after {
   transition: all 500ms ease-in-out;
 }
 
-a:hover::after {
+.links-nav:hover::after {
   padding: 1px;
   width: 100%;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  width: 70%;
-  justify-content: baseline;
+.links-button {
+  background: #d93232;
+  color: #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 260px;
+}
+
+.links-button:hover {
+  border: 2px solid #d9d9d9;
+  color: white;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bests-brands {
+  display: grid;
+  background-color: #0d0d0d;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  border: 2px solid red;
+  justify-items: center;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.slogan-and-description {
+  margin-left: 80px;
+  padding: 40px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 50px;
+  background-color: #262626;
+  border-left: 4px solid #d9d9d9;
 }

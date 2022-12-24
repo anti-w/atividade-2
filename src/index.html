@@ -20,77 +20,113 @@
   </head>
   <body>
     <header>
-      <h1>Sk8 Shop</h1>
+      <h1>SK8 SHOP</h1>
       <nav>
-        <a href="/src/index.html">Home</a>
-        <a href="/src/screens/Listagem/index.html">Listagem</a>
-        <a href="/src/screens/Vendas/index.html">Vendas</a>
-        <a href="/src/screens/Criacao/index.html">Criação</a>
+        <a class="links-nav" href="/src/index.html">Home</a>
+        <a class="links-nav" href="/src/screens/Listagem/index.html"
+          >Listagem</a
+        >
+        <a class="links-nav" href="/src/screens/Vendas/index.html">Vendas</a>
+        <a class="links-nav" href="/src/screens/Criacao/index.html">Criação</a>
       </nav>
     </header>
     <main>
-      <section>
-        <h2>As melhores marcas do skate em um só lugar!</h2>
-        <figure>
-          <img
-            src="/assets/images/element-logo.png"
-            alt="Logo Element em PNG"
-            style="height: 120px; aspect-ratio: 5/1"
-          />
-        </figure>
-        <figure>
-          <img
-            src="/assets/images/hocks-logo.png"
-            alt="Logo Hocks em PNG"
-            style="height: 120px; aspect-ratio: 1/1"
-          />
-        </figure>
-        <figure>
-          <img
-            src="/assets/images/bones-logo.png"
-            alt="Logo Element em PNG"
-            style="height: 120px; aspect-ratio: 3/1"
-          />
-        </figure>
-        <figure>
-          <img
-            src="/assets/images/nike-sb-logo.png"
-            alt="Logo Nike SB em PNG"
-            style="height: 120px; aspect-ratio: 3/1"
-          />
-        </figure>
-        <figure>
-          <img
-            src="/assets/images/adidas-logo.png"
-            alt="Logo Adidas em PNG"
-            style="height: 120px; aspect-ratio: 1/1"
-          />
-        </figure>
-        <figure>
-          <img
-            src="/assets/images/spitfire-logo.png"
-            alt="Logo Spitfire em PNG"
-            style="height: 120px; aspect-ratio: 1/1"
-          />
-        </figure>
-        <figure>
-          <img
-            src="/assets/images/flip-logo.png"
-            alt="Skatista em preto e branco pulando bem alto"
-          />
-        </figure>
+      <section class="bests-brands">
+        <div class="slogan-and-description">
+          <h2>As <strong>melhores marcas de skate </strong> em um só lugar!</h2>
+          <h3 style="font-weight: lighter">
+            Fundada com o intuito de <strong>fortalecer os skatistas </strong>do
+            nosso país com <strong>qualidade</strong> e
+            <strong>evolução</strong> no rolê. Estamos trabalhando para melhorar
+            a cada dia e você pode nos ajudar a melhorar ainda mais.
+          </h3>
+          <a class="links-button" href="/src/screens/Vendas/index.html"
+            >Conheça nossos produtos</a
+          >
+        </div>
+
+        <div>
+          <div class="slide fade">
+            <img
+              src="/assets/images/element-logo.png"
+              alt="Logo Element em PNG"
+              style="height: 120px; aspect-ratio: 5/1"
+            />
+          </div>
+
+          <div class="slide fade">
+            <img
+              src="/assets/images/dgk-logo.webp"
+              alt="Logo DGK branca em PNG"
+              style="height: 200px; aspect-ratio: 2/1"
+            />
+          </div>
+
+          <div class="slide fade">
+            <img
+              src="/assets/images/vans-logo.png"
+              alt="Logo VANS vermelho em PNG"
+              style="height: 200px; aspect-ratio: 2/1"
+            />
+          </div>
+
+          <div class="slide fade">
+            <img
+              src="/assets/images/nike-sb-logo.png"
+              alt="Logo Nike SB em PNG"
+              style="height: 200px; aspect-ratio: 2/1"
+            />
+          </div>
+
+          <div class="slide fade">
+            <img
+              src="/assets/images/adidas-logo.png"
+              alt="Logo Adidas em PNG"
+              style="height: 200px; aspect-ratio: 2/1.5"
+            />
+          </div>
+
+          <div class="slide fade">
+            <img
+              src="/assets/images/spitfire-logo.png"
+              alt="Logo Spitfire em PNG"
+              style="height: 200px; aspect-ratio: 1/1"
+            />
+          </div>
+
+          <div class="slide fade">
+            <img src="/assets/images/flip-logo.png" alt="Lofo FLIP em PNG" />
+          </div>
+        </div>
       </section>
     </main>
-    <section>
-      <p>
-        Fundada com o intuito de fortalecer os skatistas do nosso país com
-        qualidade e entrega rápida. Estamos trabalhando para melhorar a cada
-        dia.
-      </p>
-    </section>
 
     <footer>
-      <h4>Sk8 E-Commerce - Since 16 dez - 10:58</h4>
+      <h4>A vida é feita de obstáculos. 🛹</h4>
+
+      <h4>SK8 SHOP - Since 16 dez - 10:58</h4>
+      <h4>feito por Wendel Demétrio.</h4>
     </footer>
   </body>
 </html>
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let idx;
+    let slides = document.getElementsByClassName("slide");
+
+    for (idx = 0; idx < slides.length; idx++) {
+      slides[idx].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+  }
+</script>
