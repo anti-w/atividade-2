@@ -1,6 +1,9 @@
 table {
   height: 50vh;
 }
+main {
+  padding: 20px;
+}
 
 th,
 td {
@@ -13,4 +16,33 @@ td {
   border: 2px solid gray;
   text-align: left;
   border-collapse: collapse;
+}
+
+button {
+  border: 0;
+  background-color: #0d0d0d;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+
+.page-title-with-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-icons {
+  padding: 8px;
+  margin-inline: 6px;
+  border-radius: 8px;
+}
+
+.material-icons:hover {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+.material-icons.md-28 {
+  font-size: 28px;
 }
