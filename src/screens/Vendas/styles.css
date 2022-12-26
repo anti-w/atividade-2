@@ -1,0 +1,58 @@
+main {
+  width: 100vw;
+  position: absolute;
+  padding: 20px;
+  margin-bottom: 40px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  row-gap: 100px;
+  height: auto;
+}
+header {
+  margin-bottom: 40px;
+}
+img {
+  width: 70%;
+  aspect-ratio: 1/1;
+}
+
+.title-price-and-button {
+  color: white;
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -90px;
+}
+
+.product-title {
+  font-weight: 900;
+}
+.description {
+  font-weight: lighter;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+  top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 360px;
+  aspect-ratio: 1/1.1;
+  background-color: #262626;
+  border-radius: 10px;
+}
+
+.card img {
+  position: relative;
+  top: -110px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
