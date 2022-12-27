@@ -1,14 +1,8 @@
 main {
-  width: 100vw;
-  position: absolute;
-  padding: 20px;
-  margin-bottom: 40px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 80px;
-  row-gap: 100px;
-  height: auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 header {
   margin-bottom: 40px;
@@ -18,32 +12,38 @@ img {
   aspect-ratio: 1/1;
 }
 
-.title-price-and-button {
-  color: white;
-  height: 100%;
-  gap: 10px;
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.title-description-price-add {
+  color: #d9d9d9;
+  margin-top: -90px;
+  min-height: 280px;
+  gap: 12px;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
+  text-align: center;
   align-items: center;
-  margin-top: -90px;
+  justify-content: flex-start;
 }
 
 .product-title {
+  min-height: 55px;
   font-weight: 900;
 }
 .description {
+  min-height: 76px;
   font-weight: lighter;
 }
 
 .card {
+  margin-top: 90px;
   padding: 10px;
   text-align: center;
-  top: 50px;
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   height: 360px;
   aspect-ratio: 1/1.1;
@@ -53,6 +53,21 @@ img {
 
 .card img {
   position: relative;
-  top: -110px;
+  top: -125px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #d93232;
+  font-size: 14px;
+  color: #d9d9d9;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 240px;
 }
