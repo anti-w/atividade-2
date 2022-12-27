@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 600px;
+  aspect-ratio: 1/1;
+  border: 1px solid gray;
+  padding: 40px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+input,
+textarea {
+  width: 40%;
+  padding: 5px;
+}
+
+textarea {
+  height: 20%;
+}
+
+input[type="number"] {
+  width: 45%;
+}
