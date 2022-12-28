@@ -1,3 +1,8 @@
+main {
+  justify-content: center;
+  flex-direction: row;
+}
+
 form {
   display: flex;
   justify-content: flex-start;
@@ -27,4 +32,8 @@ textarea {
 
 input[type="number"] {
   width: 45%;
+}
+
+img {
+  width: 240px;
 }
