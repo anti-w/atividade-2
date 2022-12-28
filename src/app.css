@@ -57,6 +57,10 @@ footer {
   height: 70px;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   display: inline;
   text-decoration: none;

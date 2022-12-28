@@ -9,33 +9,66 @@
       name="description"
       content="Loja online com peças de skate com todas as marcas, tem de tudo!"
     />
+    <link rel="stylesheet" type="text/css" href="/src/app.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Sk8 Shop | Cadastrar Produto</title>
   </head>
 
   <body>
     <header>
+      <h1>SK8 SHOP</h1>
       <nav>
-        <a href="/home.html">Home</a>
-        <a href="/listagem.html">Listagem</a>
-        <a href="/vendas.html">Vendas</a>
-        <a href="/criacao.html">Criação</a>
+        <a class="links-nav" href="/src/index.html">Home</a>
+        <a class="links-nav" href="/src/screens/Listagem/index.html">
+          Listagem
+        </a>
+        <a class="links-nav" href="/src/screens/Vendas/index.html">Vendas</a>
+        <a class="links-nav" href="/src/screens/Criacao/index.html">Criação</a>
       </nav>
     </header>
     <main>
       <form action="caminhodaapi">
-        <label for="name">Produto:</label>
-        <input type="text" name="name" id="name" />
-        <label for="desc">Descrição:</label>
-        <textarea name="desc" id="desc">Descreva o produto</textarea>
-        <label for="price">Preço:</label>
-        <input type="number" name="price" id="price" />
-        <label for="stock">Estoque:</label>
-        <input type="number" name="stock" id="stock" />
-        <button type="submit">Enviar</button>
+        <div class="container">
+          <h2>Cadastre seu produto</h2>
+          <div class="separator">
+            <label for="name">Produto:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome do produto"
+            />
+          </div>
+
+          <div class="separator">
+            <label for="desc">Descrição:</label>
+            <textarea
+              name="desc"
+              id="desc"
+              placeholder="Descreva o produto"
+            ></textarea>
+          </div>
+          <div class="price-and-stock">
+            <label for="price">Preço:</label>
+            <input type="number" name="price" id="price" placeholder="R$" />
+            <label for="stock">Estoque:</label>
+            <input type="number" name="stock" id="stock" placeholder="Qtd" />
+          </div>
+
+          <button type="submit" class="links-button">Enviar</button>
+        </div>
       </form>
     </main>
     <footer>
-      <h4>Sk8 E-Commerce - Since 16 dez - 10:58</h4>
+      <h4>A vida é feita de obstáculos. 🛹</h4>
+      <h4>SK8 SHOP - Since 16 dez - 10:58</h4>
+      <h4>feito por Wendel Demétrio.</h4>
     </footer>
   </body>
 </html>

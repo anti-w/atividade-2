@@ -1,0 +1,86 @@
+main {
+  justify-content: center;
+  flex-direction: row;
+}
+
+form {
+  background-image: url("/assets/images/skate-yellow-wall.avif");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 65vh;
+  aspect-ratio: 1/1;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #d9d9d9;
+  width: min-content;
+}
+
+input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 80px;
+  width: 300px;
+}
+
+input {
+  width: 200px;
+}
+
+input[type="number"] {
+  width: 80px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  left: -30px;
+  bottom: 40px;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-block: 50px;
+  padding-inline: 30px;
+  border-radius: 10px;
+  background: #262626;
+}
+
+.separator {
+  display: flex;
+  width: min-content;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.price-and-stock {
+  display: flex;
+  width: min-content;
+  gap: 8px;
+}
+
+button {
+  align-self: center;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+h2 {
+  width: auto;
+  font-size: 24px;
+  align-self: center;
+  margin-top: -20px;
+}

@@ -2,7 +2,9 @@ main {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 80px;
+  height: auto;
+  margin-bottom: 20px;
 }
 header {
   margin-bottom: 40px;
@@ -15,13 +17,16 @@ img {
 button {
   background-color: transparent;
   border: none;
+  color: #d9d9d9;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .title-description-price-add {
   color: #d9d9d9;
   margin-top: -90px;
   min-height: 280px;
-  gap: 12px;
+  gap: 10px;
   display: flex;
   flex-flow: column wrap;
   text-align: center;
@@ -34,16 +39,20 @@ button {
   font-weight: 900;
 }
 .description {
-  min-height: 76px;
+  height: 76px;
+  overflow: auto;
   font-weight: lighter;
+  text-overflow: ellipsis;
 }
 
 .card {
-  margin-top: 90px;
+  z-index: 1;
+  margin-top: 80px;
   padding: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: inherit;
   align-items: center;
   height: 360px;
   aspect-ratio: 1/1.1;
@@ -53,8 +62,9 @@ button {
 
 .card img {
   position: relative;
-  top: -125px;
+  top: -120px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  margin-bottom: -15px;
 }
 
 .add-to-cart-btn {
@@ -70,4 +80,43 @@ button {
   border-radius: 10px;
   text-align: center;
   width: 240px;
+}
+
+.add-to-cart-btn:hover {
+  border: 2px solid #d9d9d9;
+}
+.quantity-and-price {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  gap: 30px;
+  font-weight: bold;
+  margin-block: 8px;
+}
+
+.price {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.left-side {
+  display: inline;
+  position: relative;
+  padding: 5px;
+  top: 50px;
+  right: 130px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.left-side:hover {
+  color: #d93232;
+  background-color: #d9d9d9;
+}
+
+.quantity-and-price button:hover {
+  color: #262626;
+  background-color: #d9d9d9;
 }
