@@ -25,34 +25,44 @@
       <h1>SK8 SHOP</h1>
       <nav>
         <a class="links-nav" href="/src/index.html">Home</a>
-        <a class="links-nav" href="/src/screens/Listagem/index.html"
-          >Listagem</a
-        >
+        <a class="links-nav" href="/src/screens/Listagem/index.html">
+          Listagem
+        </a>
         <a class="links-nav" href="/src/screens/Vendas/index.html">Vendas</a>
         <a class="links-nav" href="/src/screens/Criacao/index.html">Criação</a>
       </nav>
     </header>
     <main>
-      <img src="/assets/images/skate-yellow-wall.avif" />
       <form action="caminhodaapi">
-        <div class="separator">
-          <label for="name">Produto:</label>
-          <input type="text" name="name" id="name" />
-        </div>
+        <div class="container">
+          <h2>Cadastre seu produto</h2>
+          <div class="separator">
+            <label for="name">Produto:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome do produto"
+            />
+          </div>
 
-        <div class="separator">
-          <label for="desc">Descrição:</label>
-          <textarea
-            name="desc"
-            id="desc"
-            placeholder="Descreva o produto"
-          ></textarea>
+          <div class="separator">
+            <label for="desc">Descrição:</label>
+            <textarea
+              name="desc"
+              id="desc"
+              placeholder="Descreva o produto"
+            ></textarea>
+          </div>
+          <div class="price-and-stock">
+            <label for="price">Preço:</label>
+            <input type="number" name="price" id="price" placeholder="R$" />
+            <label for="stock">Estoque:</label>
+            <input type="number" name="stock" id="stock" placeholder="Qtd" />
+          </div>
+
+          <button type="submit" class="links-button">Enviar</button>
         </div>
-        <label for="price">Preço:</label>
-        <input type="number" name="price" id="price" />
-        <label for="stock">Estoque:</label>
-        <input type="number" name="stock" id="stock" />
-        <button type="submit" class="links-button">Enviar</button>
       </form>
     </main>
     <footer>
